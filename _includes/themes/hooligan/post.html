@@ -8,7 +8,7 @@
 </div> -->
 
 <div class="row-fluid">
-  <div class="span10 offset1">
+  <div class="span8 offset1">
     {{ content }}
 <!--     <hr>
     <div class="pagination btn-group">
@@ -28,19 +28,37 @@
     {% include JB/comments %}
   </div>
   
-  <div class="span1">
-    <section>
-      <h4>Published</h4>
-      <div class="date"><span>{{ page.date | date_to_long_string }}</span></div>
-    </section>
+  <div class="span2">
     {% if page.category %}
       <section>
-        <h4>Category</h4>
+        <h4>Category :</h4>
         <span class="category">
           {{ page.category }}
         </span>
       </section>
-    {% endif %}     
+    {% endif %}
+    <section>
+      <h4>Date :</h4>
+      <div class="date"><span>{{ page.date | date_to_long_string }}</span></div>
+    </section>
+    {% if page.booking %}
+      <section>
+        <h4>Registration :</h4>
+        <span class="booking">
+          <a class="btn" href="{{ page.booking }}" title="booking" target="_blank">Click here to register</a>
+        </span>
+      </section>
+    {% endif %}
+    {% if page.location %}
+      <section>
+        <h4>Location :</h4>
+        <span class="location">
+          {{ page.location }}
+          <iframe width="250" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="{{ page.map }}"></iframe>
+          <a class="btn" href="{{ page.direction }}" title="directions" target="_blank">Get directions</a>
+        </span>
+      </section>
+    {% endif %}
 <!--     {% unless page.tags == empty %}
       <section>
         <h4>Tags</h4>

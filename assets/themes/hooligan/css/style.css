@@ -15,7 +15,7 @@ body {
   color: #bbb;
   text-shadow: 1px 1px 1px #000;
   height: 100%;
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Oxygen', 'Pontano Sans', sans-serif;
   font-size: 14px;
 }
 
@@ -23,10 +23,10 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-weight: normal;
-  color: #999;
+  color: #dddddd;
   text-rendering: optimizelegibility;
-  font-family: 'Advent Pro', sans-serif;
-  /*font-family: 'Pontano Sans', sans-serif;*/
+  /* font-family: 'Advent Pro', sans-serif; */
+  font-family: 'Oxygen', 'Pontano Sans', sans-serif;
 }
 
 /* line 35, ../_sass/_base.scss */
@@ -47,7 +47,7 @@ a:hover {
 /* line 44, ../_sass/_base.scss */
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
   font-weight: normal;
-  color: #999999;
+  color: #dddddd;
 }
 
 /* line 49, ../_sass/_base.scss */
@@ -419,4 +419,13 @@ div.sidebar section img.icon {
 .navbar div.navbar-inner .navigation {
   font-size: 20px;
   padding-top: 9px;
+}
+section {
+  padding-top: 5px;
+}
+section h4 {
+  padding-bottom: 2px;
+}
+.navbar {
+  padding-bottom: 15px;
 }
