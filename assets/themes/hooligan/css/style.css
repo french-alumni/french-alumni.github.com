@@ -110,15 +110,15 @@ hr {
 }
 
 /* line 99, ../_sass/_base.scss */
-.container > footer {
+.container-fluid > footer {
   margin-top: 20px;
   clear: both;
 }
 
 /* line 103, ../_sass/_base.scss */
-.container > footer p {
+.container-fluid  > footer p {
   text-align: center;
-  /* center align it with the container */
+  /* center align it with the container-fluid */
 }
 
 /* Content */
@@ -182,6 +182,8 @@ hr {
 .page-header h1 {
   color: #eee;
   margin-bottom: 0;
+  text-align: center;
+  font-weight: bold;
 }
 
 /* line 161, ../_sass/_base.scss */
@@ -335,11 +337,11 @@ div.content div#page-index {
   }
 
   /* line 23, ../_sass/_responsive.scss */
-  div.container {
+  div.container-fluid  {
     padding: 0px 20px;
   }
   /* line 25, ../_sass/_responsive.scss */
-  div.container div.page-header {
+  div.container-fluid  div.page-header {
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     -ms-border-radius: 0;
