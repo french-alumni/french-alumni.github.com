@@ -41,6 +41,14 @@
       <h4>Date :</h4>
       <div class="date"><span>{{ page.date | date_to_long_string }}</span></div>
     </section>
+    {% if page.hours %}
+      <section>
+        <h4>Hours :</h4>
+        <span class="hours">
+          {{ page.hours }}
+        </span>
+      </section>
+    {% endif %}
     {% if page.booking %}
       <section>
         <h4>Registration :</h4>
